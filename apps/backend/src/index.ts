@@ -12,6 +12,6 @@ app.use("/api/v1", folderRoutesV1);
 app.use("/api/v1", fileRoutesV1);
 
 
-app.listen(4000, () => {
-  console.log("🚀 Backend listening on http://localhost:4000");
+app.listen(process.env.PORT, () => {
+  console.log(`🚀 Backend listening on http://localhost:${process.env.PORT}`);
 });
