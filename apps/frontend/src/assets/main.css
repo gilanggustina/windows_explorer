@@ -1,0 +1,10 @@
+/* @import './base.css'; */
+@import "tailwindcss";
+
+body{
+  @apply text-sm
+}
+
+#app {
+  @apply min-h-screen;
+}

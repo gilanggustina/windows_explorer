@@ -1,0 +1,20 @@
+{
+  "name": "infokes-test",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:frontend": "bun --cwd apps/frontend dev",
+    "dev:backend": "bun --cwd apps/backend dev"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
